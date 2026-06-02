@@ -35,16 +35,16 @@
 </head>
 <body class="font-sans antialiased bg-lightCanvas text-darkText">
 
-    <!-- NAVIGATION BAR (Ottimizzata per schermi piccoli) -->
+    <!-- NAVIGATION BAR -->
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 md:px-6 py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
             <a href="#hero" class="text-lg md:text-xl font-extrabold tracking-tight whitespace-nowrap">
                 Quello che <span class="text-punchTeal">ci muove.</span>
             </a>
-            <!-- I link testuali si nascondono su mobile per non affollare la barra -->
             <div class="hidden sm:flex items-center gap-6 text-sm font-semibold text-gray-600">
                 <a href="#manifesto" class="hover:text-punchOrange transition-colors">Il Manifesto</a>
                 <a href="#project" class="hover:text-punchOrange transition-colors">Il Progetto</a>
+                <a href="#author" class="hover:text-punchOrange transition-colors">L'Autrice</a>
             </div>
             <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                target="_blank" rel="noopener noreferrer"
@@ -54,7 +54,7 @@
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION (Flessibile ed elegante da mobile) -->
+    <!-- 1. HERO SECTION -->
     <header id="hero" class="relative min-h-[80vh] md:min-h-[85vh] flex items-center justify-center bg-slate-900 overflow-hidden px-4 md:px-6 py-16 md:py-24 text-center">
         <!-- Immagine di Sfondo HD -->
         <img src="venti-views-I1EWTM5mFEM-unsplash.jpg" 
@@ -103,17 +103,10 @@
                         Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
                     </p>
                 </div>
-
-                <!-- NOTA SULL'AUTRICE -->
-                <div class="pt-6 border-t border-gray-100 mt-8">
-                    <p class="text-xs md:text-sm text-gray-500 italic leading-relaxed">
-                        <strong class="text-darkText font-semibold not-italic">Rosa Jeanne Padelletti</strong> — Autrice e atleta outdoor, vive il movimento e gli sport di endurance come habitat per esplorare la spinta viscerale che ogni volta rimette in cammino.
-                    </p>
-                </div>
             </div>
         </section>
 
-        <!-- 3. IL PROGETTO (Card adattiva per display mobile) -->
+        <!-- 3. IL PROGETTO -->
         <section id="project" class="relative py-20 md:py-32 px-4 md:px-6 bg-slate-900 overflow-hidden">
             <!-- Immagine di Sfondo HD -->
             <img src="jack-atkinson-skVQkjCcmi4-unsplash.jpg" 
@@ -143,10 +136,24 @@
                 </div>
             </div>
         </section>
+
+        <!-- 4. L'AUTRICE (Nuova Sezione Sintetica e Dedicata) -->
+        <section id="author" class="py-16 md:py-24 px-4 md:px-6 bg-white border-b border-gray-100">
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-6 h-1 bg-punchOrange rounded"></span>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-punchOrange">L'Autrice</h2>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-extrabold text-darkText">Rosa Jeanne Padelletti</h3>
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                    Autrice e atleta outdoor, vive il movimento e gli sport di endurance come habitat per esplorare la spinta viscerale che ogni volta la rimette in cammino.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <!-- 4. FOOTER & CONVERSIONE -->
-    <footer class="bg-darkText text-white pt-16 md:pt-24 pb-12 px-4 md:px-6 border-t border-gray-800">
+    <!-- 5. FOOTER & CONVERSIONE -->
+    <footer class="bg-darkText text-white pt-16 md:pt-24 pb-12 px-4 md:px-6">
         <div class="max-w-4xl mx-auto text-center space-y-10 md:space-y-12">
             <div class="space-y-3">
                 <h3 class="text-2xl md:text-5xl font-extrabold tracking-tight">
