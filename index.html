@@ -42,8 +42,8 @@
                 Quello che <span class="text-punchTeal">ci muove.</span>
             </a>
             <div class="flex items-center gap-6 text-sm font-semibold">
+                <a href="#manifesto" class="hover:text-punchOrange transition-colors">Il Manifesto</a>
                 <a href="#project" class="hover:text-punchOrange transition-colors">Il Progetto</a>
-                <a href="#author" class="hover:text-punchOrange transition-colors">L'Autrice</a>
                 <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                    target="_blank" rel="noopener noreferrer"
                    class="bg-punchOrange text-white font-bold px-4 py-2 rounded-lg hover:bg-punchTeal transition-colors duration-300">
@@ -53,21 +53,18 @@
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION (Sfondo: Tramonto in HD con Overlay scuro/Teal) -->
-    <header id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-black overflow-hidden px-6 py-24 text-center">
+    <!-- 1. HERO SECTION -->
+    <header id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-slate-900 overflow-hidden px-6 py-24 text-center">
         <!-- Immagine di Sfondo HD -->
         <img src="venti-views-I1EWTM5mFEM-unsplash.jpg" 
              alt="Sunset endurance running" 
-             class="absolute inset-0 w-full h-full object-cover object-center opacity-60 z-0">
+             class="absolute inset-0 w-full h-full object-cover object-center opacity-50 z-0">
         
-        <!-- Overlay a gradiente per proteggere la lettura del testo -->
-        <div class="absolute inset-0 bg-gradient-to-t from-darkText via-darkText/50 to-punchTeal/40 z-10"></div>
+        <!-- Overlay a gradiente protettivo -->
+        <div class="absolute inset-0 bg-gradient-to-t from-darkText via-darkText/60 to-punchTeal/30 z-10"></div>
         
-        <!-- Contenuto (Sopra l'immagine e l'overlay) -->
+        <!-- Contenuto -->
         <div class="relative z-20 max-w-4xl mx-auto space-y-6">
-            <span class="inline-block bg-punchYellow text-darkText font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full">
-                Nuovo Progetto Editoriale
-            </span>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-none">
                 Quello che <span class="text-punchOrange">ci muove.</span>
             </h1>
@@ -85,8 +82,8 @@
     </header>
 
     <main>
-        <!-- 2. IL MANIFESTO (Struttura pulita su fondo solido per staccare dagli sfondi fotografici) -->
-        <section id="project" class="py-24 px-6 bg-white">
+        <!-- 2. IL MANIFESTO -->
+        <section id="manifesto" class="py-24 px-6 bg-white">
             <div class="max-w-3xl mx-auto space-y-8">
                 <div class="flex items-center gap-3">
                     <span class="w-8 h-1 bg-punchTeal rounded"></span>
@@ -106,32 +103,42 @@
                     </p>
                 </div>
 
-                <div class="bg-punchPink/30 p-6 rounded-xl border border-punchPink font-semibold text-darkText text-center">
-                    Una ricerca continua, un'esplorazione di ciò che è viscerale, per scoprire insieme cosa siamo capaci di fare.
+                <!-- NOTA SULL'AUTRICE (Breve e posizionata subito dopo il progetto/manifesto) -->
+                <div class="pt-8 border-t border-gray-100 mt-12">
+                    <p class="text-sm text-gray-500 italic">
+                        <strong class="text-darkText font-semibold not-italic">Rosa Jeanne Padelletti</strong> — Autrice e atleta outdoor, vive il movimento e gli sport di endurance come habitat per esplorare la spinta viscerale che ogni volta rimette in cammino.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. L'AUTRICE (Sfondo: Corsa in città in HD con Blocco Testo a contrasto) -->
-        <section id="author" class="relative py-32 px-6 bg-gray-900 overflow-hidden">
+        <!-- 3. IL PROGETTO (Spazio riprogettato con focus su Substack e dinamica di pubblicazione) -->
+        <section id="project" class="relative py-32 px-6 bg-slate-900 overflow-hidden">
             <!-- Immagine di Sfondo HD -->
             <img src="jack-atkinson-skVQkjCcmi4-unsplash.jpg" 
                  alt="Woman running urban curve" 
-                 class="absolute inset-0 w-full h-full object-cover object-center opacity-40 z-0">
+                 class="absolute inset-0 w-full h-full object-cover object-center opacity-35 z-0">
             
             <!-- Overlay di uniformità cromatico -->
-            <div class="absolute inset-0 bg-punchTeal/40 backdrop-blur-[2px] z-10"></div>
+            <div class="absolute inset-0 bg-punchTeal/40 backdrop-blur-[1px] z-10"></div>
 
-            <!-- Card Contenuto Asimmetrica (Rende il testo ultra-leggibile sopra la foto) -->
+            <!-- Card Contenuto Asimmetrica -->
             <div class="relative z-20 max-w-5xl mx-auto flex justify-center md:justify-start">
-                <div class="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl max-w-2xl border border-white/20">
-                    <span class="text-xs font-bold uppercase tracking-widest text-punchTeal block mb-2">L'Autrice</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkText mb-1">Rosa Jeanne Padelletti</h2>
-                    <h3 class="text-sm font-bold text-punchOrange uppercase tracking-wider mb-6">Autrice & Atleta Outdoor</h3>
+                <div class="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl max-w-2xl border border-white/20 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-punchTeal block">Lo Spazio Editoriale</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkText">Il Progetto</h2>
                     
-                    <p class="text-gray-700 text-lg leading-relaxed">
-                        Ho fatto dell’outdoor e degli sport di endurance il mio habitat: una ricerca continua mossa non solo dalla sfida, ma dall’intero spettro di emozioni che la natura porta con sé. Dalla fatica pulita alla quiete profonda, vivo il movimento per quella spinta viscerale che ogni volta ti rimette in cammino. Mi piace scoprire cosa posso fare.
-                    </p>
+                    <div class="text-gray-700 text-lg leading-relaxed space-y-4 font-normal">
+                        <p>
+                            Questo è un progetto editoriale nato per dare voce e spazio alle donne che praticano sport di endurance, esplorando le motivazioni profonde e l'impatto emotivo della fatica e della natura.
+                        </p>
+                        <p>
+                            Le storie e i capitoli vengono pubblicati su <span class="font-semibold text-punchTeal">Substack senza una cadenza fissa</span>, rispettando il tempo necessario che ogni esperienza richiede per essere vissuta, metabolizzata e scritta.
+                        </p>
+                        <p class="font-medium text-darkText bg-punchYellow/30 p-4 rounded-xl border border-punchYellow/50">
+                            Il modo migliore per seguire il viaggio e rimanere aggiornati è iscriversi direttamente al canale Substack per ricevere ogni aggiornamento nella propria casella di posta.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -145,7 +152,7 @@
                     Non perderti nessuna storia.
                 </h3>
                 <p class="text-punchYellow text-lg md:text-xl max-w-xl mx-auto font-medium opacity-90">
-                    Unisciti alla community su Substack per ricevere i primi capitoli direttamente nella tua casella di posta.
+                    Unisciti alla community su Substack per ricevere i prossimi capitoli direttamente nella tua casella di posta.
                 </p>
             </div>
             
