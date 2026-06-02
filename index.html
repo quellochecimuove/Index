@@ -6,10 +6,10 @@
     <title>Quello che ci muove | Storie di Donne e Sport</title>
     <meta name="description" content="Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.">
     
-    <!-- Google Fonts: Plus Jakarta Sans per un look editoriale e premium -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,12 +18,12 @@
             theme: {
                 extend: {
                     colors: {
-                        punchOrange: '#FF8243', /* Arancio Energetico */
-                        punchPink: '#FFC0CB',   /* Rosa Soft */
-                        punchYellow: '#FCE883', /* Giallo Sole */
-                        punchTeal: '#069494',   /* Teal Profondo */
-                        darkText: '#1E293B',    /* Slate 800 per massima leggibilità */
-                        lightCanvas: '#FAFAFA'  /* Sfondo pulito di base */
+                        punchOrange: '#FF8243', /* Arancio */
+                        punchPink: '#FFC0CB',   /* Rosa */
+                        punchYellow: '#FCE883', /* Giallo */
+                        punchTeal: '#069494',   /* Teal */
+                        darkText: '#0F172A',
+                        lightCanvas: '#FAFAFA'
                     },
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
@@ -32,51 +32,52 @@
             }
         }
     </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
-<body class="font-sans antialiased bg-lightCanvas text-darkText selection:bg-punchYellow selection:text-punchTeal">
+<body class="font-sans antialiased bg-lightCanvas text-darkText">
 
-    <!-- NAVIGATION BAR MINIMALISTICA -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4">
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <a href="#hero" class="text-xl font-extrabold tracking-tight text-darkText">
+            <a href="#hero" class="text-xl font-extrabold tracking-tight">
                 Quello che <span class="text-punchTeal">ci muove.</span>
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+            <div class="flex items-center gap-6 text-sm font-semibold">
                 <a href="#project" class="hover:text-punchOrange transition-colors">Il Progetto</a>
                 <a href="#author" class="hover:text-punchOrange transition-colors">L'Autrice</a>
+                <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-punchOrange text-white font-bold px-4 py-2 rounded-lg hover:bg-punchTeal transition-colors duration-300">
+                    Substack
+                </a>
             </div>
-            <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
-               target="_blank" rel="noopener noreferrer"
-               class="bg-punchTeal text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-darkText transition-colors duration-300">
-                Substack
-            </a>
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION (Impatto pulito, tipografia gigante, focus unico) -->
-    <header id="hero" class="relative overflow-hidden px-6 py-24 md:py-36 bg-white border-b border-gray-100">
-        <!-- Accento geometrico di sfondo usando il Rosa della palette -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-punchPink/20 rounded-full blur-3xl -z-10 transform translate-x-10 -translate-y-10"></div>
+    <!-- 1. HERO SECTION (Sfondo: Tramonto in HD con Overlay scuro/Teal) -->
+    <header id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-black overflow-hidden px-6 py-24 text-center">
+        <!-- Immagine di Sfondo HD -->
+        <img src="venti-views-I1EWTM5mFEM-unsplash.jpg" 
+             alt="Sunset endurance running" 
+             class="absolute inset-0 w-full h-full object-cover object-center opacity-60 z-0">
         
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="inline-block bg-punchPink text-darkText font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+        <!-- Overlay a gradiente per proteggere la lettura del testo -->
+        <div class="absolute inset-0 bg-gradient-to-t from-darkText via-darkText/50 to-punchTeal/40 z-10"></div>
+        
+        <!-- Contenuto (Sopra l'immagine e l'overlay) -->
+        <div class="relative z-20 max-w-4xl mx-auto space-y-6">
+            <span class="inline-block bg-punchYellow text-darkText font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full">
                 Nuovo Progetto Editoriale
             </span>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-darkText mb-8 leading-none">
-                Quello che <br class="hidden md:inline"><span class="text-punchOrange">ci muove.</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-none">
+                Quello che <span class="text-punchOrange">ci muove.</span>
             </h1>
-            <p class="text-lg md:text-2xl text-gray-600 font-medium leading-relaxed max-w-3xl mx-auto mb-12">
+            <p class="text-lg md:text-2xl text-gray-200 font-medium leading-relaxed max-w-2xl mx-auto">
                 Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div class="pt-4">
                 <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                    target="_blank" rel="noopener noreferrer"
-                   class="w-full sm:w-auto bg-punchOrange text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-punchOrange/20 hover:bg-darkText hover:shadow-none transition-all duration-300 transform hover:-translate-y-0.5">
+                   class="inline-block bg-punchOrange text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
                     Leggi le Storie su Substack &rarr;
                 </a>
             </div>
@@ -84,52 +85,51 @@
     </header>
 
     <main>
-        <!-- 2. IL MANIFESTO (Struttura asimmetrica a due colonne per massima chiarezza visiva) -->
-        <section id="project" class="py-24 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <!-- Colonna Sinistra: Titolo in blocco Teal -->
-            <div class="lg:col-span-4 sticky top-28">
-                <div class="border-l-4 border-punchTeal pl-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-punchTeal">Il Manifesto</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkText mt-2 tracking-tight">Il Progetto</h2>
+        <!-- 2. IL MANIFESTO (Struttura pulita su fondo solido per staccare dagli sfondi fotografici) -->
+        <section id="project" class="py-24 px-6 bg-white">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="flex items-center gap-3">
+                    <span class="w-8 h-1 bg-punchTeal rounded"></span>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-punchTeal">Il Manifesto</h2>
                 </div>
-                <!-- Box evidenziatore Giallo per la citazione chiave -->
-                <div class="bg-punchYellow/40 p-6 rounded-2xl mt-8 border border-punchYellow">
-                    <p class="text-lg font-bold text-darkText leading-snug">
-                        "Qual è la forza invisibile che ci fa scegliere la fatica, la pioggia, i sentieri impervi?"
-                    </p>
-                </div>
-            </div>
-
-            <!-- Colonna Destra: Testo del manifesto strutturato in paragrafi ariosi -->
-            <div class="lg:col-span-8 space-y-8 text-lg md:text-xl text-gray-600 leading-relaxed">
-                <p class="font-medium text-darkText text-xl md:text-2xl">
+                
+                <p class="text-2xl md:text-3xl font-bold text-darkText leading-tight italic border-l-4 border-punchYellow pl-6">
                     Cosa spinge una donna ad andare oltre il limite? Qual è la forza invisibile che ci fa scegliere la fatica, la pioggia, i sentieri impervi, la sveglia prima dell'alba?
                 </p>
-                <p>
-                    <span class="font-bold text-darkText">"Quello che ci muove"</span> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. 
-                </p>
-                <p>
-                    Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
-                </p>
-                <div class="bg-lightCanvas p-6 rounded-xl border border-gray-100 font-medium text-punchTeal">
+                
+                <div class="text-gray-600 text-lg md:text-xl leading-relaxed space-y-6 pt-4">
+                    <p>
+                        <strong class="text-darkText font-extrabold">"Quello che ci muove"</strong> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. 
+                    </p>
+                    <p>
+                        Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
+                    </p>
+                </div>
+
+                <div class="bg-punchPink/30 p-6 rounded-xl border border-punchPink font-semibold text-darkText text-center">
                     Una ricerca continua, un'esplorazione di ciò che è viscerale, per scoprire insieme cosa siamo capaci di fare.
                 </div>
             </div>
         </section>
 
-        <!-- 3. L'AUTRICE (Blocco cromatico a contrasto con sfondo Rosa Soft per staccare visivamente) -->
-        <section id="author" class="bg-punchPink/30 py-24 px-6 border-y border-punchPink/50">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center md:text-left space-y-6">
-                    <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm text-xs font-bold uppercase tracking-widest text-punchTeal">
-                        <span class="w-2 h-2 rounded-full bg-punchOrange"></span> Dietro la penna
-                    </div>
-                    <h2 class="text-4xl font-extrabold tracking-tight text-darkText">Rosa Jeanne Padelletti</h2>
-                    <h3 class="text-xl font-bold text-punchTeal tracking-wide uppercase">Autrice & Atleta Outdoor</h3>
+        <!-- 3. L'AUTRICE (Sfondo: Corsa in città in HD con Blocco Testo a contrasto) -->
+        <section id="author" class="relative py-32 px-6 bg-gray-900 overflow-hidden">
+            <!-- Immagine di Sfondo HD -->
+            <img src="jack-atkinson-skVQkjCcmi4-unsplash.jpg" 
+                 alt="Woman running urban curve" 
+                 class="absolute inset-0 w-full h-full object-cover object-center opacity-40 z-0">
+            
+            <!-- Overlay di uniformità cromatico -->
+            <div class="absolute inset-0 bg-punchTeal/40 backdrop-blur-[2px] z-10"></div>
+
+            <!-- Card Contenuto Asimmetrica (Rende il testo ultra-leggibile sopra la foto) -->
+            <div class="relative z-20 max-w-5xl mx-auto flex justify-center md:justify-start">
+                <div class="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl max-w-2xl border border-white/20">
+                    <span class="text-xs font-bold uppercase tracking-widest text-punchTeal block mb-2">L'Autrice</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkText mb-1">Rosa Jeanne Padelletti</h2>
+                    <h3 class="text-sm font-bold text-punchOrange uppercase tracking-wider mb-6">Autrice & Atleta Outdoor</h3>
                     
-                    <hr class="border-punchPink/80 w-20 mx-auto md:mx-0">
-                    
-                    <p class="text-lg md:text-xl text-darkText/90 leading-relaxed font-normal max-w-3xl">
+                    <p class="text-gray-700 text-lg leading-relaxed">
                         Ho fatto dell’outdoor e degli sport di endurance il mio habitat: una ricerca continua mossa non solo dalla sfida, ma dall’intero spettro di emozioni che la natura porta con sé. Dalla fatica pulita alla quiete profonda, vivo il movimento per quella spinta viscerale che ogni volta ti rimette in cammino. Mi piace scoprire cosa posso fare.
                     </p>
                 </div>
@@ -137,33 +137,32 @@
         </section>
     </main>
 
-    <!-- 4. FOOTER & CONVERSIONE (Chiusura focalizzata sul Teal per dare profondità e contrasto) -->
-    <footer class="bg-punchTeal text-white pt-24 pb-12 px-6">
+    <!-- 4. FOOTER & CONVERSIONE -->
+    <footer class="bg-darkText text-white pt-24 pb-12 px-6 border-t border-gray-800">
         <div class="max-w-4xl mx-auto text-center space-y-12">
             <div class="space-y-4">
                 <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight">
                     Non perderti nessuna storia.
                 </h3>
                 <p class="text-punchYellow text-lg md:text-xl max-w-xl mx-auto font-medium opacity-90">
-                    Unisciti alla community su Substack per ricevere i prossimi capitoli direttamente nella tua casella di posta.
+                    Unisciti alla community su Substack per ricevere i primi capitoli direttamente nella tua casella di posta.
                 </p>
             </div>
             
             <div>
-                <!-- Bottone finale Arancio che stacca nettamente sullo sfondo Teal -->
                 <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                    target="_blank" rel="noopener noreferrer"
-                   class="inline-block bg-punchOrange text-white font-bold text-lg px-10 py-5 rounded-xl shadow-xl shadow-black/10 hover:bg-white hover:text-punchTeal transition-all duration-300 transform hover:-translate-y-0.5">
+                   class="inline-block bg-punchOrange text-white font-bold text-lg px-10 py-5 rounded-xl shadow-xl shadow-punchOrange/10 hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
                     Iscriviti alla Newsletter
                 </a>
             </div>
 
-            <!-- Note di chiusura pulite -->
-            <div class="border-t border-white/20 pt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/70">
+            <!-- Note di chiusura -->
+            <div class="border-t border-gray-800 pt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-400">
                 <p>&copy; 2026 Quello che ci muove. Tutti i diritti riservati.</p>
                 <div class="flex items-center gap-2">
-                    <span class="opacity-60">Scrivimi a:</span>
-                    <a href="mailto:rosapadelletti@gmail.com" class="text-punchYellow font-semibold hover:underline">
+                    <span class="opacity-60">Contatti:</span>
+                    <a href="mailto:rosapadelletti@gmail.com" class="text-punchPink hover:text-punchYellow transition-colors font-semibold">
                         rosapadelletti@gmail.com
                     </a>
                 </div>
