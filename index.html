@@ -6,116 +6,144 @@
     <title>Quello che ci muove | Storie di Donne e Sport</title>
     <meta name="description" content="Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.">
     
+    <!-- Google Fonts: Inter per una tipografia geometrica e moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primaryBg: '#F8FAFC',
-                        textMain: '#0F172A',
-                        accentVibrant: '#FF4D29',
-                        accentNature: '#0D9488',
-                        textMuted: '#475569',
+                        coralNeon: '#FF4D29',    /* Colore 1: Arancio Energetico */
+                        pinkNeon: '#FF007A',     /* Colore 2: Rosa Shocking */
+                        cyanElectric: '#00F5D4', /* Colore 3: Cyan/Teal Fluido */
+                        githubDark: '#0F172A',   /* Base scura di contrasto */
+                        githubBg: '#F8FAFC',     /* Sfondo chiaro tipico dei temi GitHub */
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    lineHeight: {
-                        relaxed: '1.6',
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Base styles per mantenere pulizia e scorrimento fluido */
         html {
             scroll-behavior: smooth;
         }
-        body {
-            background-color: #F8FAFC;
-            color: #0F172A;
+        /* Stile personalizzato per i bottoni in pieno stile Jekyll Theme */
+        .github-btn {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        .github-btn:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-1px);
         }
     </style>
 </head>
-<body class="font-sans antialiased text-textMain bg-primaryBg selection:bg-accentVibrant selection:text-white">
+<body class="font-sans antialiased bg-githubBg text-githubDark selection:bg-pinkNeon selection:text-white">
 
-    <header id="hero" class="relative flex flex-col items-center justify-center min-h-[90vh] px-6 py-20 text-center max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-            Quello che ci muove.
-        </h1>
-        <p class="text-lg md:text-2xl text-textMuted font-normal leading-relaxed mb-10 max-w-3xl">
-            Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.
-        </p>
-        <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="inline-block bg-accentVibrant text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
-            Leggi le Storie su Substack &rarr;
-        </a>
+    <!-- HERO BANNER (Stile Jekyll Cayman con Gradiente a 3 Colori Accesi) -->
+    <header class="relative bg-gradient-to-r from-coralNeon via-pinkNeon to-cyanElectric text-white text-center py-24 px-6 shadow-md">
+        <!-- Overlay geometrico opzionale per texture stile GitHub -->
+        <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        
+        <div class="relative max-w-4xl mx-auto flex flex-col items-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-sm">
+                Quello che ci muove.
+            </h1>
+            <p class="text-xl md:text-2xl font-medium opacity-95 max-w-3xl leading-relaxed mb-10 text-white/90">
+                Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.
+            </p>
+            
+            <!-- CTA Button Principale -->
+            <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="github-btn inline-block font-bold text-lg px-8 py-3.5 rounded-lg shadow-sm">
+                Leggi le Storie su Substack &rarr;
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section id="project" class="bg-white py-24 px-6 border-y border-gray-200/60">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center md:text-left">Il Progetto</h2>
-                <div class="prose prose-lg text-textMuted leading-relaxed space-y-6">
-                    <p>
+    <!-- CONTENITORE CENTRALE (Tipico dei layout GitHub Pages) -->
+    <main class="max-w-4xl mx-auto px-6 py-16 -mt-8 relative z-10">
+        <div class="bg-white rounded-xl shadow-xl border border-gray-200/80 p-8 md:p-14 space-y-16">
+            
+            <!-- SEZIONE 2: IL MANIFESTO DEL PROGETTO -->
+            <section id="project" class="prose prose-slate max-w-none">
+                <h2 class="text-3xl font-extrabold tracking-tight text-githubDark border-b-2 border-gray-100 pb-3 mb-6 flex items-center gap-2">
+                    <span class="w-3 h-6 rounded-sm bg-coralNeon"></span>
+                    Il Progetto
+                </h2>
+                <div class="text-gray-600 text-lg leading-relaxed space-y-6">
+                    <p class="italic text-xl text-gray-500 font-medium">
                         Cosa spinge una donna ad andare oltre il limite? Qual è la forza invisibile che ci fa scegliere la fatica, la pioggia, i sentieri impervi, la sveglia prima dell'alba?
                     </p>
                     <p>
-                        <strong class="text-textMain font-extrabold">"Quello che ci muove"</strong> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
+                        <strong class="text-githubDark font-extrabold">"Quello che ci muove"</strong> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
                     </p>
                     <p>
                         Una ricerca continua, un'esplorazione di ciò che è viscerale, per scoprire insieme cosa siamo capaci di fare.
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="author" class="py-24 px-6">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
-                <div class="w-full md:w-1/2 aspect-square md:aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden relative shadow-inner flex items-center justify-center text-center p-6">
-                    <span class="text-textMuted font-medium text-sm border-2 border-dashed border-gray-400 p-4 rounded-lg">
-                        [Placeholder Foto: Rosa Jeanne Padelletti<br>Stile outdoor/endurance]
+            <!-- SEZIONE 3: L'AUTRICE (Layout focalizzato sul testo, senza placeholder foto) -->
+            <section id="author" class="prose prose-slate max-w-none">
+                <h2 class="text-3xl font-extrabold tracking-tight text-githubDark border-b-2 border-gray-100 pb-3 mb-2 flex items-center gap-2">
+                    <span class="w-3 h-6 rounded-sm bg-cyanElectric"></span>
+                    L'Autrice
+                </h2>
+                <div class="bg-slate-50 border-l-4 border-pinkNeon p-6 rounded-r-lg mt-6">
+                    <h3 class="text-2xl font-extrabold text-githubDark m-0">Rosa Jeanne Padelletti</h3>
+                    <span class="inline-block text-sm font-bold tracking-wider text-pinkNeon uppercase mt-1">
+                        Autrice & Atleta Outdoor
                     </span>
-                </div>
-                
-                <div class="w-full md:w-1/2 text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Rosa Jeanne Padelletti</h2>
-                    <h3 class="text-xl font-bold text-accentNature mb-6">Autrice & Atleta Outdoor</h3>
-                    <p class="text-textMuted text-lg leading-relaxed">
+                    <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-0">
                         Ho fatto dell’outdoor e degli sport di endurance il mio habitat: una ricerca continua mossa non solo dalla sfida, ma dall’intero spettro di emozioni che la natura porta con sé. Dalla fatica pulita alla quiete profonda, vivo il movimento per quella spinta viscerale che ogni volta ti rimette in cammino. Mi piace scoprire cosa posso fare.
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
     </main>
 
-    <footer class="bg-textMain text-primaryBg py-20 px-6 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h3 class="text-3xl font-extrabold mb-4 text-white">Non perderti nessuna storia.</h3>
-            <p class="text-gray-300 text-lg mb-10">
+    <!-- SEZIONE 4: FOOTER & SEZIONE CONVERSIONE (Chiusura Scura in contrasto con accenti) -->
+    <footer class="bg-githubDark text-gray-300 pt-16 pb-12 px-6 mt-12 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-extrabold text-white tracking-tight mb-3">
+                Non perderti nessuna storia.
+            </h3>
+            <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8">
                 Unisciti alla community su Substack per ricevere i prossimi capitoli direttamente nella tua casella di posta.
             </p>
             
+            <!-- Bottone Finale con sfumatura della Palette -->
             <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                target="_blank" 
                rel="noopener noreferrer"
-               class="inline-block bg-accentVibrant text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out mb-16">
+               class="inline-block bg-gradient-to-r from-coralNeon to-pinkNeon text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:opacity-90 hover:scale-[1.01] transition-all duration-200 mb-16">
                 Iscriviti alla Newsletter
             </a>
 
-            <div class="credits border-t border-gray-700 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-                <a href="mailto:rosapadelletti@gmail.com" class="hover:text-accentNature transition-colors duration-300">
-                    rosapadelletti@gmail.com
-                </a>
+            <!-- Contatti & Copyright in pieno stile GitHub Pages Footer -->
+            <div class="border-t border-gray-800/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
                 <p>&copy; 2026 Quello che ci muove. Tutti i diritti riservati.</p>
+                <div class="flex items-center gap-1">
+                    <span>Contatti:</span>
+                    <a href="mailto:rosapadelletti@gmail.com" class="text-gray-400 hover:text-cyanElectric transition-colors font-medium">
+                        rosapadelletti@gmail.com
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
