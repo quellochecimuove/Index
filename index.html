@@ -35,26 +35,27 @@
 </head>
 <body class="font-sans antialiased bg-lightCanvas text-darkText">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <a href="#hero" class="text-xl font-extrabold tracking-tight">
+    <!-- NAVIGATION BAR (Ottimizzata per schermi piccoli) -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 md:px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
+            <a href="#hero" class="text-lg md:text-xl font-extrabold tracking-tight whitespace-nowrap">
                 Quello che <span class="text-punchTeal">ci muove.</span>
             </a>
-            <div class="flex items-center gap-6 text-sm font-semibold">
+            <!-- I link testuali si nascondono su mobile per non affollare la barra -->
+            <div class="hidden sm:flex items-center gap-6 text-sm font-semibold text-gray-600">
                 <a href="#manifesto" class="hover:text-punchOrange transition-colors">Il Manifesto</a>
                 <a href="#project" class="hover:text-punchOrange transition-colors">Il Progetto</a>
-                <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
-                   target="_blank" rel="noopener noreferrer"
-                   class="bg-punchOrange text-white font-bold px-4 py-2 rounded-lg hover:bg-punchTeal transition-colors duration-300">
-                    Substack
-                </a>
             </div>
+            <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
+               target="_blank" rel="noopener noreferrer"
+               class="bg-punchOrange text-white font-bold text-xs md:text-sm px-4 py-2 rounded-lg hover:bg-punchTeal transition-colors duration-300 shadow-sm whitespace-nowrap">
+                Substack
+            </a>
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION -->
-    <header id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-slate-900 overflow-hidden px-6 py-24 text-center">
+    <!-- 1. HERO SECTION (Flessibile ed elegante da mobile) -->
+    <header id="hero" class="relative min-h-[80vh] md:min-h-[85vh] flex items-center justify-center bg-slate-900 overflow-hidden px-4 md:px-6 py-16 md:py-24 text-center">
         <!-- Immagine di Sfondo HD -->
         <img src="venti-views-I1EWTM5mFEM-unsplash.jpg" 
              alt="Sunset endurance running" 
@@ -65,16 +66,16 @@
         
         <!-- Contenuto -->
         <div class="relative z-20 max-w-4xl mx-auto space-y-6">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-none">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-white leading-tight md:leading-none">
                 Quello che <span class="text-punchOrange">ci muove.</span>
             </h1>
-            <p class="text-lg md:text-2xl text-gray-200 font-medium leading-relaxed max-w-2xl mx-auto">
+            <p class="text-base sm:text-lg md:text-2xl text-gray-200 font-medium leading-relaxed max-w-2xl mx-auto px-2">
                 Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.
             </p>
             <div class="pt-4">
                 <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                    target="_blank" rel="noopener noreferrer"
-                   class="inline-block bg-punchOrange text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
+                   class="inline-block w-full sm:w-auto bg-punchOrange text-white font-bold text-base md:text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
                     Leggi le Storie su Substack &rarr;
                 </a>
             </div>
@@ -83,18 +84,18 @@
 
     <main>
         <!-- 2. IL MANIFESTO -->
-        <section id="manifesto" class="py-24 px-6 bg-white">
-            <div class="max-w-3xl mx-auto space-y-8">
+        <section id="manifesto" class="py-16 md:py-24 px-4 md:px-6 bg-white">
+            <div class="max-w-3xl mx-auto space-y-6 md:space-y-8">
                 <div class="flex items-center gap-3">
-                    <span class="w-8 h-1 bg-punchTeal rounded"></span>
+                    <span class="w-6 h-1 bg-punchTeal rounded"></span>
                     <h2 class="text-xs font-bold uppercase tracking-widest text-punchTeal">Il Manifesto</h2>
                 </div>
                 
-                <p class="text-2xl md:text-3xl font-bold text-darkText leading-tight italic border-l-4 border-punchYellow pl-6">
+                <p class="text-xl md:text-3xl font-bold text-darkText leading-tight italic border-l-4 border-punchYellow pl-4 md:pl-6">
                     Cosa spinge una donna ad andare oltre il limite? Qual è la forza invisibile che ci fa scegliere la fatica, la pioggia, i sentieri impervi, la sveglia prima dell'alba?
                 </p>
                 
-                <div class="text-gray-600 text-lg md:text-xl leading-relaxed space-y-6 pt-4">
+                <div class="text-gray-600 text-base md:text-xl leading-relaxed space-y-4 md:space-y-6 pt-2">
                     <p>
                         <strong class="text-darkText font-extrabold">"Quello che ci muove"</strong> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. 
                     </p>
@@ -103,17 +104,17 @@
                     </p>
                 </div>
 
-                <!-- NOTA SULL'AUTRICE (Breve e posizionata subito dopo il progetto/manifesto) -->
-                <div class="pt-8 border-t border-gray-100 mt-12">
-                    <p class="text-sm text-gray-500 italic">
+                <!-- NOTA SULL'AUTRICE -->
+                <div class="pt-6 border-t border-gray-100 mt-8">
+                    <p class="text-xs md:text-sm text-gray-500 italic leading-relaxed">
                         <strong class="text-darkText font-semibold not-italic">Rosa Jeanne Padelletti</strong> — Autrice e atleta outdoor, vive il movimento e gli sport di endurance come habitat per esplorare la spinta viscerale che ogni volta rimette in cammino.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. IL PROGETTO (Spazio riprogettato con focus su Substack e dinamica di pubblicazione) -->
-        <section id="project" class="relative py-32 px-6 bg-slate-900 overflow-hidden">
+        <!-- 3. IL PROGETTO (Card adattiva per display mobile) -->
+        <section id="project" class="relative py-20 md:py-32 px-4 md:px-6 bg-slate-900 overflow-hidden">
             <!-- Immagine di Sfondo HD -->
             <img src="jack-atkinson-skVQkjCcmi4-unsplash.jpg" 
                  alt="Woman running urban curve" 
@@ -124,18 +125,18 @@
 
             <!-- Card Contenuto Asimmetrica -->
             <div class="relative z-20 max-w-5xl mx-auto flex justify-center md:justify-start">
-                <div class="bg-white/95 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl max-w-2xl border border-white/20 space-y-4">
+                <div class="bg-white/95 backdrop-blur-md p-6 md:p-12 rounded-2xl shadow-2xl max-w-2xl border border-white/20 space-y-4">
                     <span class="text-xs font-bold uppercase tracking-widest text-punchTeal block">Lo Spazio Editoriale</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkText">Il Progetto</h2>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-darkText">Il Progetto</h2>
                     
-                    <div class="text-gray-700 text-lg leading-relaxed space-y-4 font-normal">
+                    <div class="text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal">
                         <p>
                             Questo è un progetto editoriale nato per dare voce e spazio alle donne che praticano sport di endurance, esplorando le motivazioni profonde e l'impatto emotivo della fatica e della natura.
                         </p>
                         <p>
                             Le storie e i capitoli vengono pubblicati su <span class="font-semibold text-punchTeal">Substack senza una cadenza fissa</span>, rispettando il tempo necessario che ogni esperienza richiede per essere vissuta, metabolizzata e scritta.
                         </p>
-                        <p class="font-medium text-darkText bg-punchYellow/30 p-4 rounded-xl border border-punchYellow/50">
+                        <p class="font-medium text-darkText bg-punchYellow/30 p-4 rounded-xl border border-punchYellow/50 text-sm md:text-base">
                             Il modo migliore per seguire il viaggio e rimanere aggiornati è iscriversi direttamente al canale Substack per ricevere ogni aggiornamento nella propria casella di posta.
                         </p>
                     </div>
@@ -145,13 +146,13 @@
     </main>
 
     <!-- 4. FOOTER & CONVERSIONE -->
-    <footer class="bg-darkText text-white pt-24 pb-12 px-6 border-t border-gray-800">
-        <div class="max-w-4xl mx-auto text-center space-y-12">
-            <div class="space-y-4">
-                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+    <footer class="bg-darkText text-white pt-16 md:pt-24 pb-12 px-4 md:px-6 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto text-center space-y-10 md:space-y-12">
+            <div class="space-y-3">
+                <h3 class="text-2xl md:text-5xl font-extrabold tracking-tight">
                     Non perderti nessuna storia.
                 </h3>
-                <p class="text-punchYellow text-lg md:text-xl max-w-xl mx-auto font-medium opacity-90">
+                <p class="text-punchYellow text-base md:text-xl max-w-xl mx-auto font-medium opacity-90 px-2">
                     Unisciti alla community su Substack per ricevere i prossimi capitoli direttamente nella tua casella di posta.
                 </p>
             </div>
@@ -159,13 +160,13 @@
             <div>
                 <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
                    target="_blank" rel="noopener noreferrer"
-                   class="inline-block bg-punchOrange text-white font-bold text-lg px-10 py-5 rounded-xl shadow-xl shadow-punchOrange/10 hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
+                   class="inline-block w-full sm:w-auto bg-punchOrange text-white font-bold text-base md:text-lg px-10 py-5 rounded-xl shadow-xl shadow-punchOrange/10 hover:bg-white hover:text-darkText transition-all duration-300 transform hover:-translate-y-0.5">
                     Iscriviti alla Newsletter
                 </a>
             </div>
 
             <!-- Note di chiusura -->
-            <div class="border-t border-gray-800 pt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-400">
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs md:text-sm text-gray-400">
                 <p>&copy; 2026 Quello che ci muove. Tutti i diritti riservati.</p>
                 <div class="flex items-center gap-2">
                     <span class="opacity-60">Contatti:</span>
