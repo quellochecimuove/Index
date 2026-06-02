@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quello che ci muove | Storie di Donne e Sport</title>
+    <meta name="description" content="Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryBg: '#F8FAFC',
+                        textMain: '#0F172A',
+                        accentVibrant: '#FF4D29',
+                        accentNature: '#0D9488',
+                        textMuted: '#475569',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    lineHeight: {
+                        relaxed: '1.6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base styles per mantenere pulizia e scorrimento fluido */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #F8FAFC;
+            color: #0F172A;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-textMain bg-primaryBg selection:bg-accentVibrant selection:text-white">
+
+    <header id="hero" class="relative flex flex-col items-center justify-center min-h-[90vh] px-6 py-20 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Quello che ci muove.
+        </h1>
+        <p class="text-lg md:text-2xl text-textMuted font-normal leading-relaxed mb-10 max-w-3xl">
+            Storie di donne, sport di endurance e l'esplorazione profonda delle emozioni che ci spingono a metterci in cammino.
+        </p>
+        <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-block bg-accentVibrant text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+            Leggi le Storie su Substack &rarr;
+        </a>
+    </header>
+
+    <main>
+        <section id="project" class="bg-white py-24 px-6 border-y border-gray-200/60">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center md:text-left">Il Progetto</h2>
+                <div class="prose prose-lg text-textMuted leading-relaxed space-y-6">
+                    <p>
+                        Cosa spinge una donna ad andare oltre il limite? Qual è la forza invisibile che ci fa scegliere la fatica, la pioggia, i sentieri impervi, la sveglia prima dell'alba?
+                    </p>
+                    <p>
+                        <strong class="text-textMain font-extrabold">"Quello che ci muove"</strong> nasce per dare voce e spazio ai racconti di donne nello sport. Non cerchiamo solo i record, i tempi sul cronometro o i gradini del podio. Vogliamo capire l’intero spettro emotivo che ci porta a intraprendere determinati percorsi: la fatica pulita, la paura, la determinazione e, infine, quella quiete profonda che solo la natura sa restituire.
+                    </p>
+                    <p>
+                        Una ricerca continua, un'esplorazione di ciò che è viscerale, per scoprire insieme cosa siamo capaci di fare.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="author" class="py-24 px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                <div class="w-full md:w-1/2 aspect-square md:aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden relative shadow-inner flex items-center justify-center text-center p-6">
+                    <span class="text-textMuted font-medium text-sm border-2 border-dashed border-gray-400 p-4 rounded-lg">
+                        [Placeholder Foto: Rosa Jeanne Padelletti<br>Stile outdoor/endurance]
+                    </span>
+                </div>
+                
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-2">Rosa Jeanne Padelletti</h2>
+                    <h3 class="text-xl font-bold text-accentNature mb-6">Autrice & Atleta Outdoor</h3>
+                    <p class="text-textMuted text-lg leading-relaxed">
+                        Ho fatto dell’outdoor e degli sport di endurance il mio habitat: una ricerca continua mossa non solo dalla sfida, ma dall’intero spettro di emozioni che la natura porta con sé. Dalla fatica pulita alla quiete profonda, vivo il movimento per quella spinta viscerale che ogni volta ti rimette in cammino. Mi piace scoprire cosa posso fare.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-textMain text-primaryBg py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-3xl font-extrabold mb-4 text-white">Non perderti nessuna storia.</h3>
+            <p class="text-gray-300 text-lg mb-10">
+                Unisciti alla community su Substack per ricevere i prossimi capitoli direttamente nella tua casella di posta.
+            </p>
+            
+            <a href="https://quellochecimuove.substack.com/?utm_campaign=profile_chips" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-block bg-accentVibrant text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out mb-16">
+                Iscriviti alla Newsletter
+            </a>
+
+            <div class="credits border-t border-gray-700 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                <a href="mailto:rosapadelletti@gmail.com" class="hover:text-accentNature transition-colors duration-300">
+                    rosapadelletti@gmail.com
+                </a>
+                <p>&copy; 2026 Quello che ci muove. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
